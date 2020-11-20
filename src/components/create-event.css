@@ -20,8 +20,13 @@
   padding: 4vmin 0;
 }
 
+.create-event .event-form .calendar .calendar-input {
+  background-color: var(--light-yellow);
+  padding: 4px;
+}
+
 .create-event .event-form .calendar button {
-  width: 100%;
+  width: 98%;
   border-radius: 0;
 
   padding: 4px;

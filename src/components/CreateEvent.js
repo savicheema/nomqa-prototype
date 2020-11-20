@@ -44,7 +44,12 @@ class CreateEvent extends React.Component {
                 Set time,date and duration
               </button>
             )}
-            {isCalendar && <Calendar onChange={this.onChange} value={false} />}
+
+            {isCalendar && (
+              <div className="calendar-input">
+                <Calendar onChange={this.onChange} value={false} />
+              </div>
+            )}
           </div>
           {!isCalendar && (
             <div className="keyword">
