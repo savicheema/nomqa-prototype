@@ -13,6 +13,7 @@ class CreateEvent extends React.Component {
       isCalendar: false,
     };
   }
+
   onChange = () => {
     this.setState({ isCalendar: false });
     return function () {};
@@ -24,6 +25,7 @@ class CreateEvent extends React.Component {
 
   render() {
     let { isCalendar } = this.state;
+    let { goToInvite } = this.props;
     return (
       <div className="create-event">
         <div className="logo">
@@ -45,7 +47,9 @@ class CreateEvent extends React.Component {
             <input placeholder="set keyword" />
           </div>
 
-          <button type="button">Create Event</button>
+          <button type="button" onClick={goToInvite}>
+            Create Event
+          </button>
         </div>
 
         <div className="join-event-link">Joining an event? Click here</div>

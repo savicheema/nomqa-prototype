@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 
 import CreateEvent from "./components/CreateEvent";
+import Invite from "./components/Invite";
 import JoinEvent from "./components/JoinEvent";
 
 class App extends React.Component {
@@ -22,10 +23,16 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <this.state.currentPage></this.state.currentPage>
+        <this.state.currentPage
+          goToInvite={this.setInviteAsCurrentPage}
+        ></this.state.currentPage>
       </div>
     );
   }
+
+  setInviteAsCurrentPage = () => {
+    this.setState({ currentPage: Invite });
+  };
 }
 
 export default App;

@@ -1,0 +1,19 @@
+.invite {
+  height: 96vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  padding: 0 4vmin;
+}
+
+.invite .content {
+  height: 88vh;
+
+  background-color: var(--yellow);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
