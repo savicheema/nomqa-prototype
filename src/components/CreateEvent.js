@@ -46,13 +46,17 @@ class CreateEvent extends React.Component {
             )}
             {isCalendar && <Calendar onChange={this.onChange} value={false} />}
           </div>
-          <div className="keyword">
-            <input placeholder="set keyword" />
-          </div>
+          {!isCalendar && (
+            <div className="keyword">
+              <input placeholder="set keyword" />
+            </div>
+          )}
 
-          <button className="action" type="button" onClick={goToInvite}>
-            Create Event
-          </button>
+          {!isCalendar && (
+            <button className="action" type="button" onClick={goToInvite}>
+              Create Event
+            </button>
+          )}
         </div>
 
         <div className="join-event-link" onClick={goToJoinEvent}>
