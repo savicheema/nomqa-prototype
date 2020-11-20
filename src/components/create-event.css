@@ -1,0 +1,7 @@
+.create-event {
+  height: 90vh;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
