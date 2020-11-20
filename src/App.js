@@ -9,7 +9,9 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
-    if (window.location.href.includes("join")) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const myParam = urlParams.get("page") || "create";
+    if (myParam.includes("join")) {
       this.state = {
         currentPage: JoinEvent,
       };
