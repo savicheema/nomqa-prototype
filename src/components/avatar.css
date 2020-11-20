@@ -1,0 +1,12 @@
+.avatar {
+  width: 25vmin;
+  height: 25vmin;
+
+  background-color: white;
+  border-radius: 50%;
+}
+
+.avatar img {
+  height: 20vmin;
+  width: 20vmin;
+}

@@ -16,4 +16,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+}
+
+.invite .content .timer {
+  font-size: 36px;
 }

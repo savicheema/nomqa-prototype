@@ -25,6 +25,8 @@ class App extends React.Component {
       <div className="App">
         <this.state.currentPage
           goToInvite={this.setInviteAsCurrentPage}
+          goToJoinEvent={this.setJoinEventAsCurrentPage}
+          gotToCreateEvent={this.setCreateEventAsCurrentPage}
         ></this.state.currentPage>
       </div>
     );
@@ -32,6 +34,14 @@ class App extends React.Component {
 
   setInviteAsCurrentPage = () => {
     this.setState({ currentPage: Invite });
+  };
+
+  setJoinEventAsCurrentPage = () => {
+    this.setState({ currentPage: JoinEvent });
+  };
+
+  setCreateEventAsCurrentPage = () => {
+    this.setState({ currentPage: CreateEvent });
   };
 }
 

@@ -4,6 +4,7 @@ import "./create-event.css";
 import Calendar from "react-calendar";
 
 import NomqaLogo from "./NomqaLogo";
+import Avatar from "./Avatar";
 
 class CreateEvent extends React.Component {
   constructor(props) {
@@ -25,13 +26,15 @@ class CreateEvent extends React.Component {
 
   render() {
     let { isCalendar } = this.state;
-    let { goToInvite } = this.props;
+    let { goToInvite, goToJoinEvent } = this.props;
     return (
       <div className="create-event">
         <div className="logo">
           <NomqaLogo />
         </div>
-        <div className="avatar">Avatar</div>
+        <div className="avatar">
+          <Avatar />
+        </div>
         <div className="emoji">Emoji</div>
         <div className="Host an Event">Host an event</div>
         <div className="event-form">
@@ -47,12 +50,14 @@ class CreateEvent extends React.Component {
             <input placeholder="set keyword" />
           </div>
 
-          <button type="button" onClick={goToInvite}>
+          <button className="action" type="button" onClick={goToInvite}>
             Create Event
           </button>
         </div>
 
-        <div className="join-event-link">Joining an event? Click here</div>
+        <div className="join-event-link" onClick={goToJoinEvent}>
+          Joining an event? Click here
+        </div>
       </div>
     );
   }

@@ -1,9 +1,12 @@
 import React from "react";
 
+import "./nomqa-logo.css";
+
 class NomqaLogo extends React.Component {
   render() {
     return (
       <svg
+        className="nomqa-logo"
         data-testid="nomqa-logo"
         id="bd430991-8721-4c2b-8cc3-402db974e349"
         data-name="Layer 1"
