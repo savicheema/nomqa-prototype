@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.join-event .logo {
+  min-width: 143px;
+}
+
 .join-event .event-form {
   min-height: 24vh;
 

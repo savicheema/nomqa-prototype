@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.create-event .logo {
+  min-width: 143px;
+}
+
 .create-event .event-form {
   min-height: 24vh;
   display: flex;
